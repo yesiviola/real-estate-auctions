@@ -1,0 +1,55 @@
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0, 0.2);
+}
+
+.logoContainer {
+    display: flex;
+    align-items:center;
+}
+
+.logo {
+    height: 150px;
+    width: 190px;
+    margin-left: -10px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+.nav  {
+gap: 30px;
+    
+    font-size: 22px;
+}
+
+.nav a  {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.authButtons {
+    display: flex;
+    gap: 15px;
+}
+
+.loginButton, .registerButton {
+    background-color: rgba(98, 207, 226, 0.897);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius: 5px;
+    
+}
+
