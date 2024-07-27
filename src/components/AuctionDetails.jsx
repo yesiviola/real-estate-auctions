@@ -1,5 +1,4 @@
 
-import LocationMap from "./LocationMap";
 import RequestInfo from "./RequestInfo";
 
 
@@ -10,7 +9,7 @@ const AuctionDetails = () => {
         <div>
         
             
-            <LocationMap />
+           
             <RequestInfo />
         </div>
     )
