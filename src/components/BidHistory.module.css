@@ -15,7 +15,7 @@
     color: #333;
   }
   
-  .myBid, .otherBids {
+  .myBid, .otherBids .description, .quickLook, .housingDeatils {
     margin-top: 20px;
   }
   
@@ -25,13 +25,13 @@
   }
   
   .table th, .table td {
-    border: 1px solid #ddd;
+    border: 1px solid #ccc8c8;
     padding: 8px;
     text-align: left;
   }
   
   .table th {
-    background-color: #f2f2f2;
+    background-color: #ebe2e2;
   }
   
   .edit {
@@ -53,7 +53,7 @@
     color: #333;
   }
   
-  .description p {
+  .description p, .quickLook p, .housingDetails p {
     margin: 10px 0;
     font-size: 16px;
   }
