@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -13,38 +12,29 @@ import AuctionsNear from './components/AuctionsNear';
 import ValueCalculator from './components/ValueCalculator'
 import Statistics from './components/Statistics';
 
-
 const App = () => {
   return (
     <Router>
       <Header />
-      <Carousel />
-      <PropertyInfo />
-      <BidHistory />
-      <LocationMap /> 
-      <AuctionsNear />
-      <ValueCalculator />
-      <Statistics />
-               
       <Routes>
-        <Route path="/auction-details" component={AuctionDetails} />
-        <Route path="/request-information" component={RequestInfo} />
-        <Route path="/participate-auction" component={ParticipateAuction} />
-
+        <Route path="/" element={
+          <>
+            <Carousel />
+            <PropertyInfo />
+            <BidHistory />
+            <LocationMap /> 
+            <AuctionsNear />
+            <ValueCalculator />
+            <Statistics />
+          </>
+        } />
+        <Route path="/details/:id" element={<AuctionDetails />} />
+        <Route path="/request-information" element={<RequestInfo />} />
+        <Route path="/participate-auction" element={<ParticipateAuction />} />
       </Routes>
       <Footer />
     </Router>
   )
 }
 
-
-
-
 export default App;
-
-
-
-
-
-
-
