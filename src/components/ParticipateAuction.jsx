@@ -1,4 +1,5 @@
 import  { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from './ParticipateAuction.module.css';
 
 const ParticipateAuction = () => {
@@ -6,6 +7,7 @@ const ParticipateAuction = () => {
     // eslint-disable-next-line no-unused-vars
     const [credits, setCredits] = useState(0);
     const [bidAmount, setBidAmount] = useState('');
+    const navigate = useNavigate();
 
     const handleNextStep = () => {
         setStep(step + 1);
@@ -48,6 +50,7 @@ const ParticipateAuction = () => {
                         </label>
                         <button type="button" onClick={handleNextStep}>Next Step</button>
                     </form>
+                    <button type="button" onClick={() => navigate('/')}>Back to Home</button>
                 </div>
             )}
             {step === 2 && (
@@ -62,9 +65,8 @@ const ParticipateAuction = () => {
                     </form>
                     <button type="button" onClick={() => setStep(1)}>Buy Credits</button>
                     <button type="button" onClick={() => setStep(1)}>Cancel</button>
-                    
+                    <button type="button" onClick={() => navigate('/')}>Back to Home</button>
                 </div>
-
             )}
         </div>
     );
