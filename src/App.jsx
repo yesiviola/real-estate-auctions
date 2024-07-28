@@ -9,8 +9,9 @@ import ParticipateAuction from './components/ParticipateAuction';
 import PropertyInfo from './components/PropertyInfo';
 import BidHistory from './components/BidHistory'
 import LocationMap from './components/LocationMap';
-
-
+import AuctionsNear from './components/AuctionsNear';
+import ValueCalculator from './components/ValueCalculator'
+import Statistics from './components/Statistics';
 
 
 const App = () => {
@@ -20,8 +21,11 @@ const App = () => {
       <Carousel />
       <PropertyInfo />
       <BidHistory />
-      <LocationMap />
-
+      <LocationMap /> 
+      <AuctionsNear />
+      <ValueCalculator />
+      <Statistics />
+               
       <Routes>
         <Route path="/auction-details" component={AuctionDetails} />
         <Route path="/request-information" component={RequestInfo} />

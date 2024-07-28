@@ -1,0 +1,26 @@
+/* Statistics.module.css */
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffeb3b;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.stat {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.stat h3 {
+    font-size: 24px;
+    color: #d32f2f;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #000;
+}

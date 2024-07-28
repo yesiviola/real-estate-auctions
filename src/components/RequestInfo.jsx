@@ -19,6 +19,8 @@ const RequestInfo  = () =>  {
         <section>
             <button onClick={handleRequestClick}>Request a visit/Information</button>
             <button onClick={handleRequestClick}>Live Video Walkthrough</button>
+                       
+
         </section>
     )
 }
