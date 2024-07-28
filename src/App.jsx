@@ -11,6 +11,7 @@ import LocationMap from './components/LocationMap';
 import AuctionsNear from './components/AuctionsNear';
 import ValueCalculator from './components/ValueCalculator'
 import Statistics from './components/Statistics';
+import CalculationResult from './components/CalculationResult';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/details/:id" element={<AuctionDetails />} />
         <Route path="/request-information" element={<RequestInfo />} />
         <Route path="/participate-auction" element={<ParticipateAuction />} />
+        <Route path="/calculation-result" element={<CalculationResult />} />
       </Routes>
       <Footer />
     </Router>

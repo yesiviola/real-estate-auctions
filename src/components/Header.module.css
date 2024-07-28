@@ -1,11 +1,13 @@
-
+body {
+    background-color: #e6f5f7;
+}
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
-    background-color: white;
+    background-color: rgb(254, 255, 255);
     box-shadow: 0 2px 4px rgba(0,0,0, 0.2);
 }
 
