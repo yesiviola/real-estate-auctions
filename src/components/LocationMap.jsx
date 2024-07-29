@@ -31,6 +31,10 @@ const LocationMap = () =>   {
                         <li><input type="checkbox" checked  /> Parking Garage</li>
                         <li><input type="checkbox" checked /> Water Tank</li>
                         <li><input type="checkbox" checked /> Thermal Insulation</li>
+                        <li><input type="checkbox" checked /> Garden</li>
+                        <li><input type="checkbox" checked />
+                            Terraces</li>
+                        <li><input type="checkbox" checked /> Security</li>
                     </ul>
                 </div>
 
@@ -40,6 +44,10 @@ const LocationMap = () =>   {
                         <li><input type="checkbox" checked /> Balcony</li>
                         <li><input  type="checkbox" checked /> Built-in kitchen</li>
                         <li><input type="checkbox"  checked /> Blinds</li>
+                        <li><input type="checkbox" checked /> Ceiling Fan</li>
+                        <li><input type="checkbox" checked /> Fire Place</li>
+                        <li><input type="checkbox" checked /> Wall Fan</li>
+                        <li><input type="checkbox" checked /> Window Coverings</li>
 
                     </ul>
                 </div>
@@ -50,6 +58,9 @@ const LocationMap = () =>   {
                         <li><input type="checkbox" checked />Local</li>
                         <li><input type="checkbox" checked />Eastern Front</li>
                         <li><input type="checkbox" checked />Mountain View</li>
+                        <li><input type="checkbox" checked />Waterfront</li>
+                        <li><input type="checkbox" checked />Cul-de-sac</li>
+                        <li><input type="checkbox" checked />Exposure</li>
                     </ul>
                 </div>
             </div>

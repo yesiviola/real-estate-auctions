@@ -29,7 +29,6 @@
   .adFeatures h2, .planningZone h2 {
     justify-content: center;
     text-align: center;
-    
     font-size: 24px;
     color: #333;
     margin-bottom: 20px;
@@ -53,6 +52,8 @@
   .featureSection ul {
     list-style-type: none;
     padding: 0;
+    display:flex;
+    flex-wrap: wrap;
   }
 
 
@@ -62,12 +63,14 @@
     display:flex;
     align-items: center;
     justify-content: flex-start;
+    flex: 1 1 30%;
+    box-sizing:border-box;
    
   }
 
 
   .featureSection ul li input[type="checkbox"] {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 
 
@@ -80,13 +83,21 @@
   .table th, .table td {
     border: 1px solid #ccc8c8;
     padding: 8px;
-    
     text-align: left;
+    transition: background-color 0.3s ease;
 
   }
 
   .table th {
    
     background-color: #f2f2f2;
+  }
+
+  .table tr:hover {
+    background-color: #e0e0e0;
+  }
+
+  .table td:hover {
+    background-color:#d0d0d0;
   }
   

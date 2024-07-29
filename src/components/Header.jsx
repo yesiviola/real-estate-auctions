@@ -8,7 +8,7 @@ const Header = () => {
       </div>
 
       <nav className={styles.nav}>
-        <a href="/home">Home</a>
+        <a href="/">Home</a>
         <a href="/sale">Sale</a>
         <a href="/rent">Rent</a>
         <a href="/resources">Resources</a>
