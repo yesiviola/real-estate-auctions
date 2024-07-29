@@ -1,18 +1,26 @@
+import  { useState, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styles from "./PropertyInfo.module.css";
-import { useNavigate } from "react-router-dom";
-import { useRef } from "react";
+import LoginPopup from './LoginPopup'; 
 
 const PropertyInfo = () => {
   const navigate = useNavigate();
   const synthRef = useRef(window.speechSynthesis);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [showLoginPopup, setShowLoginPopup] = useState(false);
 
   const handleRequestClick = () => {
-    navigate("/request-information");
+    if (isAuthenticated) {
+      navigate("/request-information");
+    } else {
+      setShowLoginPopup(true);
+    }
   };
 
-  // eslint-disable-next-line no-unused-vars
-  const handleLoginClick = () => {
-    alert("Please login to access this page");
+  const handleLogin = () => {
+    setIsAuthenticated(true);
+    setShowLoginPopup(false);
+    navigate("/request-information");
   };
 
   const handleAuctioneerClick = () => {
@@ -90,6 +98,7 @@ const PropertyInfo = () => {
           </button>
         </div>
       </div>
+      {showLoginPopup && <LoginPopup onLogin={handleLogin} />}
     </section>
   );
 };

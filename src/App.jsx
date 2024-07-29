@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AuctionDetails from "./components/AuctionDetails";
-import RequestInfo from "./components/RequestInfo";
 import Carousel from './components/Carousel';
 import ParticipateAuction from './components/ParticipateAuction';
 import PropertyInfo from './components/PropertyInfo';
@@ -12,6 +11,7 @@ import AuctionsNear from './components/AuctionsNear';
 import ValueCalculator from './components/ValueCalculator'
 import Statistics from './components/Statistics';
 import CalculationResult from './components/CalculationResult';
+import RequestInformation from './components/RequestInformation';
 
 const App = () => {
   return (
@@ -30,7 +30,7 @@ const App = () => {
           </>
         } />
         <Route path="/details/:id" element={<AuctionDetails />} />
-        <Route path="/request-information" element={<RequestInfo />} />
+        <Route path="/request-information" element={<RequestInformation />} />
         <Route path="/participate-auction" element={<ParticipateAuction />} />
         <Route path="/calculation-result" element={<CalculationResult />} />
       </Routes>
