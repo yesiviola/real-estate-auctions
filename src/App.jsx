@@ -12,6 +12,7 @@ import ValueCalculator from './components/ValueCalculator'
 import Statistics from './components/Statistics';
 import CalculationResult from './components/CalculationResult';
 import RequestInformation from './components/RequestInformation';
+import LiveWalkthrough from './components/LiveWalkthrough';
 
 const App = () => {
   return (
@@ -31,6 +32,7 @@ const App = () => {
         } />
         <Route path="/details/:id" element={<AuctionDetails />} />
         <Route path="/request-information" element={<RequestInformation />} />
+        <Route path="/live-walkthrough" element={<LiveWalkthrough />} />
         <Route path="/participate-auction" element={<ParticipateAuction />} />
         <Route path="/calculation-result" element={<CalculationResult />} />
       </Routes>

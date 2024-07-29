@@ -1,0 +1,43 @@
+.liveWalkthrough {
+    padding: 20px;
+    background-color: #baf4fc;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .liveWalkthrough h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .liveWalkthrough p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .videoSection {
+    margin-bottom: 40px;
+  }
+  
+  .videoSection iframe {
+    border-radius: 8px;
+  }
+  
+  .infoSection {
+    margin-top: 40px;
+  }
+  
+  .infoSection h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .infoSection p {
+    font-size: 16px;
+  }
+  

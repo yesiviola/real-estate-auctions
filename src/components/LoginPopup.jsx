@@ -3,7 +3,7 @@ import styles from './LoginPopup.module.css';
 
 // eslint-disable-next-line react/prop-types
 const LoginPopup = ({ onLogin }) => {
-  const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleSubmit = (e) => {
@@ -17,11 +17,11 @@ const LoginPopup = ({ onLogin }) => {
       <div className={styles.popup}>
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
-          <label>Email
+          <label>Username
             <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              type="text"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
               required
             />
           </label>

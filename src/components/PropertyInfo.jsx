@@ -1,4 +1,4 @@
-import  { useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from "./PropertyInfo.module.css";
 import LoginPopup from './LoginPopup'; 
@@ -8,11 +8,22 @@ const PropertyInfo = () => {
   const synthRef = useRef(window.speechSynthesis);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [showLoginPopup, setShowLoginPopup] = useState(false);
+  const [redirectPath, setRedirectPath] = useState("");
 
   const handleRequestClick = () => {
     if (isAuthenticated) {
       navigate("/request-information");
     } else {
+      setRedirectPath("/request-information");
+      setShowLoginPopup(true);
+    }
+  };
+
+  const handleWalkthroughClick = () => {
+    if (isAuthenticated) {
+      navigate("/live-walkthrough");
+    } else {
+      setRedirectPath("/live-walkthrough");
       setShowLoginPopup(true);
     }
   };
@@ -20,7 +31,7 @@ const PropertyInfo = () => {
   const handleLogin = () => {
     setIsAuthenticated(true);
     setShowLoginPopup(false);
-    navigate("/request-information");
+    navigate(redirectPath);
   };
 
   const handleAuctioneerClick = () => {
@@ -50,7 +61,7 @@ const PropertyInfo = () => {
         <button onClick={handleRequestClick} className={styles.requestButton}>
           Request A Visit / Information
         </button>
-        <button onClick={handleRequestClick} className={styles.videoButton}>
+        <button onClick={handleWalkthroughClick} className={styles.videoButton}>
           Live Walkthrough
         </button>
       </div>
