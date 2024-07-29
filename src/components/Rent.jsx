@@ -10,7 +10,7 @@ const Rent = () => {
       features: ['3 Bedrooms', '2 Bathrooms', 'City View']
     },
     {
-      image: '/src/assets/apartment2.jpg',
+      image: '/src/assets/apartmento.jpeg',
       title: 'Modern Apartment',
       location: 'Los Angeles, CA',
       price: '$4,200/month',
