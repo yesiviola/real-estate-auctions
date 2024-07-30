@@ -11,7 +11,7 @@ const Rent = () => {
       location: 'San Francisco, CA',
       price: '$3,500/month',
       type: 'Apartment',
-      features: ['2 Bedrooms', '2 Bathrooms', 'City View']
+      features: ['2 Bedrooms', '2 Bathrooms', 'City View', 'Balcony','2nd Floor']
     },
     {
       image: '/src/assets/apartmento.jpeg',
@@ -19,7 +19,7 @@ const Rent = () => {
       location: 'Los Angeles, CA',
       price: '$4,200/month',
       type: 'Apartment',
-      features: ['3 Bedrooms', '2 Bathrooms', 'Pool Access']
+      features: ['3 Bedrooms', '2 Bathrooms', 'Pool Access', '1st Floor']
     },
     {
       image: '/src/assets/casalujo.avif',
@@ -27,7 +27,7 @@ const Rent = () => {
       location: 'Miami, FL',
       price: '$6,000/month',
       type: 'House',
-      features: ['6 Bedrooms', '3 Bathrooms', 'Ocean View']
+      features: ['6 Bedrooms', '3 Bathrooms', 'Ocean View','Garden']
     },
     {
       image: '/src/assets/house.jpg',
