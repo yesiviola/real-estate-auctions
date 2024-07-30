@@ -6,6 +6,7 @@ const Rent = () => {
   // eslint-disable-next-line no-unused-vars
   const [properties, setProperties] = useState([
     {
+      id: 1,
       image: '/src/assets/apartment.jpg',
       title: 'Luxury Apartment',
       location: 'San Francisco, CA',
@@ -14,6 +15,7 @@ const Rent = () => {
       features: ['2 Bedrooms', '2 Bathrooms', 'City View', 'Balcony','2nd Floor']
     },
     {
+      id: 2,
       image: '/src/assets/apartmento.jpeg',
       title: 'Modern Apartment',
       location: 'Los Angeles, CA',
@@ -22,6 +24,7 @@ const Rent = () => {
       features: ['3 Bedrooms', '2 Bathrooms', 'Pool Access', '1st Floor']
     },
     {
+      id: 3,
       image: '/src/assets/casalujo.avif',
       title: 'Luxury House',
       location: 'Miami, FL',
@@ -30,6 +33,7 @@ const Rent = () => {
       features: ['6 Bedrooms', '3 Bathrooms', 'Ocean View','Garden']
     },
     {
+      id: 4,
       image: '/src/assets/house.jpg',
       title: 'Luxury House',
       location: 'San Francisco',
@@ -39,9 +43,8 @@ const Rent = () => {
     },
   ]);
 
-  
-
   const [filteredProperties, setFilteredProperties] = useState(properties);
+  const [likes, setLikes] = useState([]);
 
   const applyFilters = (filters) => {
     let filtered = properties;
@@ -71,14 +74,24 @@ const Rent = () => {
     setFilteredProperties(filtered);
   };
 
+  const toggleLike = (propertyId) => {
+    setLikes(prevLikes => {
+      if (prevLikes.includes(propertyId)) {
+        return prevLikes.filter(id => id !== propertyId);
+      } else {
+        return [...prevLikes, propertyId];
+      }
+    });
+  };
+
   return (
     <div className={styles.rent}>
       <h1>Luxury Apartments and Houses for Rent</h1>
       <p>Explore our collection of luxury apartments and houses available for rent.</p>
       <AdvancedSearch onApplyFilters={applyFilters} />
       <div className={styles.properties}>
-        {filteredProperties.map((property, index) => (
-          <div key={index} className={styles.property}>
+        {filteredProperties.map((property) => (
+          <div key={property.id} className={styles.property}>
             <img src={property.image} alt={property.title} className={styles.image} />
             <div className={styles.details}>
               <h2>{property.title}</h2>
@@ -89,6 +102,12 @@ const Rent = () => {
                   <li key={index}>{feature}</li>
                 ))}
               </ul>
+              <button 
+                className={styles.likeButton} 
+                onClick={() => toggleLike(property.id)}
+              >
+                {likes.includes(property.id) ? '❤️' : '♡'}
+              </button>
             </div>
           </div>
         ))}
@@ -98,16 +117,3 @@ const Rent = () => {
 };
 
 export default Rent;
-  
-
-  
-  
-  
-
-  
-  
-  
-  
-  
-
-
