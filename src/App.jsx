@@ -14,6 +14,7 @@ import CalculationResult from './components/CalculationResult';
 import RequestInformation from './components/RequestInformation';
 import LiveWalkthrough from './components/LiveWalkthrough';
 import Rent from './components/Rent';
+import SellingGuide from './components/SellingGuide';
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/participate-auction" element={<ParticipateAuction />} />
         <Route path="/calculation-result" element={<CalculationResult />} />
         <Route path="/rent" element={<Rent />} />
+        <Route path="/selling-guide" element={<SellingGuide />} />
       </Routes>
       <Footer />
     </Router>
