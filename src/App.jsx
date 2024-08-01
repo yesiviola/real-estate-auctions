@@ -15,6 +15,7 @@ import RequestInformation from './components/RequestInformation';
 import LiveWalkthrough from './components/LiveWalkthrough';
 import Rent from './components/Rent';
 import SellingGuide from './components/SellingGuide';
+import Resources from './components/Resources';
 
 const App = () => {
   return (
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/calculation-result" element={<CalculationResult />} />
         <Route path="/rent" element={<Rent />} />
         <Route path="/selling-guide" element={<SellingGuide />} />
+        <Route path="/resources" element={<Resources />} />
       </Routes>
       <Footer />
     </Router>
