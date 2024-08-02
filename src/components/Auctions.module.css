@@ -1,0 +1,104 @@
+
+.Auctions {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px;
+  }
+  
+  .menu button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-align: left;
+  }
+  
+  .menu button:hover {
+    background-color: #b71c1c;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .createButton {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .createButton:hover {
+    background-color: #b71c1c;
+  }
+  
+  .auctionList {
+    margin-top: 20px;
+  }
+  
+  .auctionCard {
+    display: flex;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 200px;
+    height: auto;
+  }
+  
+  .details {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .details h2 {
+    margin: 0 0 10px;
+  }
+  
+  .details p {
+    margin: 5px 0;
+  }
+  
+  .approved {
+    color: green;
+  }
+  
+  .pending {
+    color: orange;
+  }
+  
+  .actions button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .actions button:hover {
+    background-color: #b71c1c;
+  }
+  

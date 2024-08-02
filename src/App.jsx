@@ -16,6 +16,8 @@ import LiveWalkthrough from './components/LiveWalkthrough';
 import Rent from './components/Rent';
 import SellingGuide from './components/SellingGuide';
 import Resources from './components/Resources';
+import About from './components/About';
+import Auctions from './components/Auctions';
 
 const App = () => {
   return (
@@ -41,6 +43,9 @@ const App = () => {
         <Route path="/rent" element={<Rent />} />
         <Route path="/selling-guide" element={<SellingGuide />} />
         <Route path="/resources" element={<Resources />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/auctions" element={<Auctions/>} />
+
       </Routes>
       <Footer />
     </Router>
