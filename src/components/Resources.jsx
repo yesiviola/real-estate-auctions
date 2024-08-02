@@ -51,6 +51,11 @@ const Resources = () => {
                         <button onClick={() => toggleExpand(index)} className={styles.readMoreButton}>
                             {expanded === index ? 'Read Less' : 'Read More'}
                         </button>
+                        {expanded === index && (
+                            <a href={resource.link} target="_blank" rel="noopener noreferrer" className={styles.resourceLink}>
+                                Read more on external site
+                            </a>
+                        )}
                     </div>
                 ))}
 
