@@ -50,11 +50,11 @@
     background-color: #b71c1c;
   }
   
-  .auctionList {
+  .auctionList, .favoritesList {
     margin-top: 20px;
   }
   
-  .auctionCard {
+  .auctionCard, .favoriteCard {
     display: flex;
     border: 1px solid #ddd;
     margin-bottom: 20px;
@@ -101,4 +101,20 @@
   .actions button:hover {
     background-color: #b71c1c;
   }
+
+
+
+  .detailsButton {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding:10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
   
+
+  .detailsButton:hover {
+    background-color: #b71c1c;
+  }
