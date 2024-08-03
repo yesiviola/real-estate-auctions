@@ -1,120 +1,162 @@
-
 .Auctions {
-    display: flex;
-  }
-  
-  .sidebar {
-    width: 200px;
-    background-color: #d32f2f;
-    color: white;
-    padding: 20px;
-  }
-  
-  .menu button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    background-color: transparent;
-    border: none;
-    color: white;
-    cursor: pointer;
-    text-align: left;
-  }
-  
-  .menu button:hover {
-    background-color: #b71c1c;
-  }
-  
-  .content {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .credits {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .createButton {
-    background-color: #d32f2f;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-  }
-  
-  .createButton:hover {
-    background-color: #b71c1c;
-  }
-  
-  .auctionList, .favoritesList {
-    margin-top: 20px;
-  }
-  
-  .auctionCard, .favoriteCard {
-    display: flex;
-    border: 1px solid #ddd;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    overflow: hidden;
-  }
-  
-  .image {
-    width: 200px;
-    height: auto;
-  }
-  
-  .details {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .details h2 {
-    margin: 0 0 10px;
-  }
-  
-  .details p {
-    margin: 5px 0;
-  }
-  
-  .approved {
-    color: green;
-  }
-  
-  .pending {
-    color: orange;
-  }
-  
-  .actions button {
-    background-color: #d32f2f;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-right: 10px;
-  }
-  
-  .actions button:hover {
-    background-color: #b71c1c;
-  }
+  display: flex;
+}
 
+.sidebar {
+  width: 200px;
+  background-color: #d32f2f;
+  color: white;
+  padding: 20px;
+}
 
+.menu button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+}
 
-  .detailsButton {
-    background-color: #d32f2f;
-    color: white;
-    border: none;
-    padding:10px;
-    cursor: pointer;
-    border-radius: 4px;
-    margin-top: 10px;
-  }
-  
+.menu button:hover {
+  background-color: #b71c1c;
+}
 
-  .detailsButton:hover {
-    background-color: #b71c1c;
-  }
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.credits {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.createButton {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.createButton:hover {
+  background-color: #b71c1c;
+}
+
+.auctionList, .favoritesList, .listingList {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.auctionCard, .favoriteCard, .listingCard {
+  display: flex;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  width: calc(50% - 10px);
+}
+
+.image {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.details {
+  flex: 1;
+  padding: 20px;
+}
+
+.details h2 {
+  margin: 0 0 10px;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.approved {
+  color: green;
+}
+
+.pending {
+  color: orange;
+}
+
+.actions button {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.actions button:hover {
+  background-color: #b71c1c;
+}
+
+.detailsButton {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.detailsButton:hover {
+  background-color: #b71c1c;
+}
+
+.createListing {
+  margin-top: 20px;
+}
+
+.basicDetails {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.basicDetails div {
+  display: flex;
+  flex-direction: column;
+}
+
+.basicDetails input, .basicDetails select, .basicDetails textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.createButton {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.createButton:hover {
+  background-color: #b71c1c;
+}
+
+.buttonContainer {
+  text-align: right;
+}
