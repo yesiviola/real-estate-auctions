@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AuctionDetails from "./components/AuctionDetails";
@@ -18,8 +19,21 @@ import SellingGuide from './components/SellingGuide';
 import Resources from './components/Resources';
 import About from './components/About';
 import Auctions from './components/Auctions';
+import Register from './components/Register';
+import Login from './components/Login';
+import Sale from './components/Sale';
+import CalculatorValue from './components/CalculatorValue';
+import { useEffect, useState } from 'react';
 
 const App = () => {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    //aqui se verificara si el usuario esta registrado y aparece en el localstorage
+
+    const authStatus = localStorage.getItem('isAuthenticated') === 'true';
+    setIsAuthenticated(authStatus);
+  }, []);
   return (
     <Router>
       <Header />
@@ -45,7 +59,10 @@ const App = () => {
         <Route path="/resources" element={<Resources />} />
         <Route path="/about" element={<About />} />
         <Route path="/auctions" element={<Auctions/>} />
-
+        <Route path="/sale" element={<Sale />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/calculator-value" element={isAuthenticated ? <CalculatorValue /> : <Navigate to="/register?redirect=/calculator-value" />} />
       </Routes>
       <Footer />
     </Router>
