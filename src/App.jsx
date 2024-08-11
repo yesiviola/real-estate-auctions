@@ -27,6 +27,9 @@ import ResultCalculate from './components/ResultCalculate';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsOfUse from './components/TermsOfUse';
+import Sitemap from './components/Sitemap';
+import BuyingGuide from './components/BuyingGuide';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -70,6 +73,11 @@ const App = () => {
         <Route path="/projects" element={<Projects/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-use" element={<TermsOfUse />} />
+        <Route path="/sitemap" element={<Sitemap />} />
+        <Route path="/buying-guide" element={<BuyingGuide/>} />
+
+
 
       </Routes>
       <Footer />

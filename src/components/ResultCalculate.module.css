@@ -1,63 +1,53 @@
 .result {
-    display:flex;
-    flex-direction:column;
-    margin-top: -90px;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f7f7f7;
-    padding: 20px;
-  }
-  
-  .resultContainer {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .resultContainer:hover {
-    transform: scale(1.02);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  
-  .resultContainer h1 {
-    font-size: 2.5rem;
-    color: #d32f2f;
-    margin-bottom: 20px;
-  }
-  
-  .resultContainer p {
-    font-size: 1.5rem;
-    color: #333;
-    margin: 0;
-  }
-  
-  .resultContainer strong {
-    display: block;
-    font-size: 2.5rem;
-    color: #b71c1c;
-    margin-top: 20px;
-    border-top: 2px solid #f0f0f0;
-    padding-top: 20px;
-  }
-  
-  .resultContainer .backButton {
-    margin-top: 30px;
-    padding: 10px 20px;
-    background-color: #d32f2f;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .resultContainer .backButton:hover {
-    background-color: #b71c1c;
-  }
-  
+  display:flexbox;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #91c4e6;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d32f2f;
+}
+
+.result h1 {
+  color: #d32f2f;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.result p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.result strong {
+  color: #333;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.goBackButton {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.goBackButton:hover {
+  background-color: #b71c1c;
+}
+
+.noDataMessage {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}

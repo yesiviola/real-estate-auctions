@@ -1,0 +1,54 @@
+.buyingGuide {
+    max-width: 1000px;
+    margin: 5px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buyingGuide h1 {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .buyingGuide h2 {
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .buyingGuide p, .buyingGuide ol, .buyingGuide ul {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .buyingGuide ol, .buyingGuide ul {
+    padding-left: 20px;
+  }
+  
+  .buyingGuide ol li, .buyingGuide ul li {
+    margin-bottom: 10px;
+  }
+  
+  .buyingGuide a {
+    color: #d32f2f;
+    text-decoration: underline;
+  }
+  
+  .buyingGuide a:hover {
+    color: #b71c1c;
+  }
+  
+  .buyingGuide section {
+    margin-bottom: 30px;
+  }
+  
+  .buyingGuide .resources ul {
+    list-style-type: disc;
+  }
+  
+  .buyingGuide .resources ul li {
+    margin-bottom: 5px;
+  }
+  

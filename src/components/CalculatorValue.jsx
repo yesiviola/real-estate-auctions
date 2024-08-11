@@ -42,7 +42,7 @@ const CalculatorValue = () => {
     const roomValue = 1800;
     const bathroomValue = 2000;
     const gardenValue = propertyDetails.garden ? 10000 : 0;
-    const garageValue = 2500 * propertyDetails.garage;
+    const garageValue = 2500 * parseInt(propertyDetails.garage || 0);
 
     let servicesValue = 0;
     if (propertyDetails.services.includes("Balcony")) servicesValue += 3000;
@@ -50,10 +50,10 @@ const CalculatorValue = () => {
     if (propertyDetails.services.includes("Elevator")) servicesValue += 4000;
 
     const propertyValue = 
-    (propertyDetails.squareMeters * basePricePerSquareMeter) +
-    (propertyDetails.constructionMeters * basePricePerSquareMeter * constructionMultiplier) +
-    (propertyDetails.rooms * roomValue) +
-    (propertyDetails.bathrooms * bathroomValue) +
+    (parseInt(propertyDetails.squareMeters || 0) * basePricePerSquareMeter) +
+    (parseInt(propertyDetails.constructionMeters || 0) * basePricePerSquareMeter * constructionMultiplier) +
+    (parseInt(propertyDetails.rooms || 0) * roomValue) +
+    (parseInt(propertyDetails.bathrooms || 0) * bathroomValue) +
     gardenValue +
     garageValue +
     servicesValue;
@@ -64,8 +64,9 @@ const CalculatorValue = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const value = calculatePropertyValue();
+    const area = parseInt(propertyDetails.squareMeters || 0);
     console.log('Property Value:', value);
-    navigate('/result-calculate', { state: { propertyValue: value } });
+    navigate('/result-calculate', { state: { area, value } });
   };
 
   return (
