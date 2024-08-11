@@ -24,6 +24,9 @@ import Sale from './components/Sale';
 import CalculatorValue from './components/CalculatorValue';
 import { useEffect, useState } from 'react';
 import ResultCalculate from './components/ResultCalculate';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import PrivacyPolicy from './components/PrivacyPolicy';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -63,8 +66,11 @@ const App = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/calculator-value" element={isAuthenticated ? <CalculatorValue /> : <Navigate to="/login?redirect=/calculator-value" />} />
-
         <Route path="/result-calculate" element={<ResultCalculate />} />
+        <Route path="/projects" element={<Projects/>} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+
       </Routes>
       <Footer />
     </Router>
