@@ -1,4 +1,3 @@
-
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -24,6 +23,7 @@ import Login from './components/Login';
 import Sale from './components/Sale';
 import CalculatorValue from './components/CalculatorValue';
 import { useEffect, useState } from 'react';
+import ResultCalculate from './components/ResultCalculate';
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -62,7 +62,9 @@ const App = () => {
         <Route path="/sale" element={<Sale />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/calculator-value" element={isAuthenticated ? <CalculatorValue /> : <Navigate to="/register?redirect=/calculator-value" />} />
+        <Route path="/calculator-value" element={isAuthenticated ? <CalculatorValue /> : <Navigate to="/login?redirect=/calculator-value" />} />
+
+        <Route path="/result-calculate" element={<ResultCalculate />} />
       </Routes>
       <Footer />
     </Router>

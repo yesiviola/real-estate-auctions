@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import styles from './Login.module.css';
+import { useState } from 'react';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -20,9 +20,13 @@ const Login = () => {
 
   const handleLogin = () => {
     console.log('Logging in with credentials:', credentials);
+    
+    // Simular inicio de sesión y guardar estado de autenticación en localStorage
     localStorage.setItem('isAuthenticated', 'true');
-    const redirectPath = new URLSearchParams(location.search).get('redirect') || '/calculator-value';
-    navigate(redirectPath);
+    
+    // Redirigir al destino previsto después de iniciar sesión
+    const redirectTo = new URLSearchParams(location.search).get('redirect') || '/';
+    navigate(redirectTo);
   };
 
   return (

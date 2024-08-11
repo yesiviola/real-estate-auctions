@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './CalculatorValue.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const CalculatorValue = () => {
   const [propertyDetails, setPropertyDetails] = useState({
@@ -13,6 +14,8 @@ const CalculatorValue = () => {
     services: [],
   });
 
+  const navigate = useNavigate();
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setPropertyDetails((prevDetails) => ({ ...prevDetails, [name]: value }));
@@ -24,8 +27,7 @@ const CalculatorValue = () => {
   };
 
   const handleArrayChange = (e) => {
-    // eslint-disable-next-line no-unused-vars
-    const { name, value, checked } = e.target;
+    const { value, checked } = e.target;
     setPropertyDetails((prevDetails) => ({
       ...prevDetails,
       services: checked
@@ -34,9 +36,36 @@ const CalculatorValue = () => {
     }));
   };
 
+  const calculatePropertyValue = () => {
+    const basePricePerSquareMeter = 1000;
+    const constructionMultiplier = 1.5;
+    const roomValue = 1800;
+    const bathroomValue = 2000;
+    const gardenValue = propertyDetails.garden ? 10000 : 0;
+    const garageValue = 2500 * propertyDetails.garage;
+
+    let servicesValue = 0;
+    if (propertyDetails.services.includes("Balcony")) servicesValue += 3000;
+    if (propertyDetails.services.includes("Pool")) servicesValue += 8000;
+    if (propertyDetails.services.includes("Elevator")) servicesValue += 4000;
+
+    const propertyValue = 
+    (propertyDetails.squareMeters * basePricePerSquareMeter) +
+    (propertyDetails.constructionMeters * basePricePerSquareMeter * constructionMultiplier) +
+    (propertyDetails.rooms * roomValue) +
+    (propertyDetails.bathrooms * bathroomValue) +
+    gardenValue +
+    garageValue +
+    servicesValue;
+
+    return propertyValue;
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Property Details:', propertyDetails);
+    const value = calculatePropertyValue();
+    console.log('Property Value:', value);
+    navigate('/result-calculate', { state: { propertyValue: value } });
   };
 
   return (

@@ -1,6 +1,15 @@
+import { useNavigate } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const Header = () => {
+   const navigate = useNavigate();
+
+   const handleLoginClick = () => {
+      navigate('/login');
+   };
+   const handleRegisterClick = () => {
+      navigate('/register');
+   };
   return (
     <header className={styles.header}>
       <div className={styles.logoContainer}>
@@ -17,8 +26,8 @@ const Header = () => {
         <a href="/auctions">Auctions</a>
       </nav>
       <div className={styles.authButtons}>
-        <button className={styles.loginButton}>Login</button>
-        <button className={styles.registerButton}>Register</button>
+        <button className={styles.loginButton} onClick={handleLoginClick}>Login</button>
+        <button className={styles.registerButton} onClick={handleRegisterClick}>Register</button>
       </div>
     </header>
   )

@@ -1,0 +1,63 @@
+.result {
+    display:flex;
+    flex-direction:column;
+    margin-top: -90px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .resultContainer {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .resultContainer:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .resultContainer h1 {
+    font-size: 2.5rem;
+    color: #d32f2f;
+    margin-bottom: 20px;
+  }
+  
+  .resultContainer p {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+  }
+  
+  .resultContainer strong {
+    display: block;
+    font-size: 2.5rem;
+    color: #b71c1c;
+    margin-top: 20px;
+    border-top: 2px solid #f0f0f0;
+    padding-top: 20px;
+  }
+  
+  .resultContainer .backButton {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resultContainer .backButton:hover {
+    background-color: #b71c1c;
+  }
+  

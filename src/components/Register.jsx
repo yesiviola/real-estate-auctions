@@ -1,10 +1,9 @@
-import { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import styles from './Register.module.css';
+import { useState } from 'react';
 
 const Register = () => {
   const navigate = useNavigate();
-  const location = useLocation();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,9 +21,12 @@ const Register = () => {
 
   const handleRegister = () => {
     console.log('Registering user with data:', formData);
+    
+    // Simular registro y guardar estado de autenticación en localStorage
     localStorage.setItem('isAuthenticated', 'true');
-    const redirectPath = new URLSearchParams(location.search).get('redirect') || '/login';
-    navigate(redirectPath);
+    
+    // Redirigir al login con el parámetro de redirección al cálculo
+    navigate('/login?redirect=/calculator-value');
   };
 
   return (
