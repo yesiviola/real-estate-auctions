@@ -32,6 +32,7 @@ import Sitemap from './components/Sitemap';
 import BuyingGuide from './components/BuyingGuide';
 import MarketTrends from './components/MarketTrends';
 import FAQs from './components/FAQs';
+import Support from './components/Support';
  
 
 const App = () => {
@@ -81,6 +82,7 @@ const App = () => {
         <Route path="/buying-guide" element={<BuyingGuide/>} />
          <Route path="/market-trends" element={<MarketTrends/>} /> 
          <Route path="/faqs" element={<FAQs/>} />
+         <Route path="/support" element={<Support />} />
 
 
 
