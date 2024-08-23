@@ -31,6 +31,7 @@ import TermsOfUse from './components/TermsOfUse';
 import Sitemap from './components/Sitemap';
 import BuyingGuide from './components/BuyingGuide';
 import MarketTrends from './components/MarketTrends';
+import FAQs from './components/FAQs';
  
 
 const App = () => {
@@ -79,6 +80,7 @@ const App = () => {
         <Route path="/sitemap" element={<Sitemap />} />
         <Route path="/buying-guide" element={<BuyingGuide/>} />
          <Route path="/market-trends" element={<MarketTrends/>} /> 
+         <Route path="/faqs" element={<FAQs/>} />
 
 
 
