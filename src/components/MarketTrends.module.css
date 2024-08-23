@@ -1,0 +1,99 @@
+.marketTrends {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.marketTrends h1 {
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.marketTrends h2 {
+  color: #333;
+  margin-top: 30px;
+  text-align: center; 
+}
+
+.marketTrends p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify; 
+}
+
+.trendItem {
+  margin-bottom: 30px;
+}
+
+.chart {
+  width: 90%;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.trendImage {
+  width: 80%;
+  display:grid;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.videoSection {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.videoContainer {
+  position: relative;
+  display:inline-block;
+  cursor: pointer;
+}
+.videoContainer {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+.videoThumbnail {
+  width: 100%;
+  max-width: 560px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.videoOverlay {
+  position: relative;
+}
+
+.resources {
+  margin-top: 40px;
+  text-align: center;
+}
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.playButton img {
+  width: 50px;
+  height: 50px;
+}
+
+.resources a {
+  color: #d32f2f;
+  text-decoration: underline;
+}
+
+.resources a:hover {
+  color: #b71c1c;
+}

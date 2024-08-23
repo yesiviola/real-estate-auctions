@@ -30,6 +30,8 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsOfUse from './components/TermsOfUse';
 import Sitemap from './components/Sitemap';
 import BuyingGuide from './components/BuyingGuide';
+import MarketTrends from './components/MarketTrends';
+ 
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -76,6 +78,7 @@ const App = () => {
         <Route path="/terms-of-use" element={<TermsOfUse />} />
         <Route path="/sitemap" element={<Sitemap />} />
         <Route path="/buying-guide" element={<BuyingGuide/>} />
+         <Route path="/market-trends" element={<MarketTrends/>} /> 
 
 
 
