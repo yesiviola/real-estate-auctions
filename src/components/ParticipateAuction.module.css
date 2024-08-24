@@ -63,3 +63,34 @@
 .popup button:hover {
     background-color: #0f72b4;
 }
+
+@media (max-width: 768px) {
+    .popup {
+        width: 80%;
+        padding: 20px;
+    }
+
+    .popup h1 {
+        font-size: 20px;
+    }
+
+    .popup button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .popup h1 {
+        font-size: 18px;
+    }
+
+    .popup button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

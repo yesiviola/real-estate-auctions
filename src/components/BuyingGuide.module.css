@@ -52,3 +52,44 @@
     margin-bottom: 5px;
   }
   
+
+  @media (max-width: 768px) {
+    .buyingGuide {
+      padding: 15px;
+      margin: 10px;
+    }
+  
+    .buyingGuide h1 {
+      font-size: 1.8em;
+    }
+  
+    .buyingGuide h2 {
+      font-size: 1.5em;
+    }
+  
+    .buyingGuide p, .buyingGuide ol, .buyingGuide ul {
+      font-size: 1em;
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .buyingGuide {
+      padding: 10px;
+      margin: 5px;
+    }
+  
+    .buyingGuide h1 {
+      font-size: 1.5em;
+    }
+  
+    .buyingGuide h2 {
+      font-size: 1.3em;
+    }
+  
+    .buyingGuide p, .buyingGuide ol, .buyingGuide ul {
+      font-size: 0.9em;
+      margin-bottom: 8px;
+    }
+  }
+  

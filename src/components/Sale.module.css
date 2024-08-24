@@ -17,6 +17,7 @@
   text-align: justify;
   line-height: 1.6;
   margin-bottom: 20px;
+  font-size: 1.1em; 
 }
 
 .article ul {
@@ -42,4 +43,37 @@
 
 .sellButton:hover {
   background-color: #b71c1c;
+}
+
+
+@media (max-width: 768px) {
+  .sale {
+    padding: 15px;
+  }
+
+  .article {
+    font-size: 1em; 
+  }
+
+  .sellButton {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .sale {
+    padding: 10px;
+    max-width: 100%; 
+  }
+
+  .article {
+    font-size: 0.9em; 
+  }
+
+  .sellButton {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
 }

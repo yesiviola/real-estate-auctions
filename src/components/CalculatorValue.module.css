@@ -64,3 +64,49 @@
 .calculator button:hover {
   background-color: #b71c1c;
 }
+
+
+@media (max-width: 768px) {
+  .calculator {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .calculator h1 {
+    font-size: 24px;
+  }
+
+  .calculator input,
+  .calculator select {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .calculator button {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .calculator {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .calculator h1 {
+    font-size: 22px;
+  }
+
+  .calculator input,
+  .calculator select {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .calculator button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+}

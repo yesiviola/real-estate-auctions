@@ -70,6 +70,7 @@ const Rent = () => {
         filters.externalFeatures.every(feature => property.features.includes(feature))
       );
     }
+  
 
     setFilteredProperties(filtered);
   };

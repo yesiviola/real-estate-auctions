@@ -1,26 +1,66 @@
-/* Statistics.module.css */
-
 .statistics {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: #ffeb3b;
     padding: 40px;
-    border-radius: 3px;
-   margin-bottom: -10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .stat {
     flex: 1;
-    margin: 0 5px;
+    margin: 10px;
+    min-width: 200px;
 }
 
 .stat h3 {
     font-size: 24px;
     color: #d32f2f;
+    margin-bottom: 10px;
 }
 
 .stat p {
     font-size: 16px;
     color: #000;
+}
+
+
+@media (max-width: 768px) {
+    .statistics {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .stat {
+        margin: 20px 0;
+    }
+
+    .stat h3 {
+        font-size: 22px;
+    }
+
+    .stat p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .statistics {
+        padding: 20px;
+    }
+
+    .stat {
+        margin: 15px 0;
+    }
+
+    .stat h3 {
+        font-size: 20px;
+    }
+
+    .stat p {
+        font-size: 12px;
+    }
 }

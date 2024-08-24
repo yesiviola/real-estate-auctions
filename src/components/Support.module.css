@@ -1,69 +1,115 @@
 .support {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.support h1 {
+  color: #d32f2f;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.support p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.supportSection {
+  margin-bottom: 40px;
+  padding: 10px;
+}
+
+.supportSection h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.supportLink {
+  display: inline-block;
+  background-color: #d32f2f;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.supportLink:hover {
+  background-color: #b71c1c;
+}
+
+.chatButton,
+.ticketButton {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.chatButton:hover,
+.ticketButton:hover {
+  background-color: #b71c1c;
+}
+
+a {
+  color: #d32f2f;
+}
+
+a:hover {
+  color: #b71c1c;
+}
+
+
+@media (max-width: 768px) {
+  .support {
+      padding: 15px;
   }
-  
+
   .support h1 {
-    color: #d32f2f;
-    text-align: center;
-    margin-bottom: 30px;
+      font-size: 24px;
   }
-  
-  .support p {
-    line-height: 1.6;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
+
   .supportSection {
-    margin-bottom: 40px;
+      padding: 8px;
   }
-  
-  .supportSection h2 {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .supportLink {
-    display: inline-block;
-    background-color: #d32f2f;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .supportLink:hover {
-    background-color: #b71c1c;
-  }
-  
+
+  .supportLink,
   .chatButton,
   .ticketButton {
-    background-color: #d32f2f;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 4px;
-    text-align: center;
-    display: inline-block;
-    transition: background-color 0.3s ease;
+      padding: 8px 15px;
+      font-size: 14px;
   }
-  
-  .chatButton:hover,
-  .ticketButton:hover {
-    background-color: #b71c1c;
+}
+
+
+@media (max-width: 480px) {
+  .support {
+      padding: 10px;
   }
-  
-  a {
-    color: #d32f2f;
+
+  .support h1 {
+      font-size: 20px;
   }
-  
-  a:hover {
-    color: #b71c1c;
+
+  .supportSection {
+      margin-bottom: 30px;
+      padding: 5px;
   }
-  
+
+  .supportLink,
+  .chatButton,
+  .ticketButton {
+      padding: 6px 12px;
+      font-size: 12px;
+  }
+}

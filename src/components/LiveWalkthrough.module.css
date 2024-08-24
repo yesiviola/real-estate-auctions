@@ -40,4 +40,26 @@
   .infoSection p {
     font-size: 16px;
   }
+
+  @media (max-width: 480px) {
+    .liveWalkthrough {
+        padding: 10px;
+    }
+
+    .liveWalkthrough h1 {
+        font-size: 22px;
+    }
+
+    .infoSection h2 {
+        font-size: 20px;
+    }
+
+    .liveWalkthrough p, .infoSection p {
+        font-size: 14px;
+    }
+
+    .videoSection iframe {
+        height: 200px; 
+    }
+}
   

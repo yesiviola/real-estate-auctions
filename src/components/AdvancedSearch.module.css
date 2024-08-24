@@ -12,11 +12,15 @@
   
   .filterSection h3 {
     margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
   }
   
   .filterSection label {
     display: block;
     margin-bottom: 5px;
+    font-size: 1em;
+    color: #555;
   }
   
   .filterSection .checkboxGroup {
@@ -28,6 +32,8 @@
   .filterSection .checkboxGroup label {
     flex: 1 1 calc(33.333% - 10px);
     margin-bottom: 10px;
+    font-size: 0.9em;
+    color: #333;
   }
   
   .applyButton {
@@ -39,5 +45,47 @@
     border-radius: 4px;
     margin-top: 20px;
     width: 100%;
+    font-size: 1em;
+    text-align: center;
+    transition: background-color 0.3s ease;
   }
+
+  .applyButton:hover {
+    background-color: #b71c1c;
+  }
+
+  @media (max-width: 768px) {
+    .filterSection .checkboxGroup label {
+        flex: 1 1 calc(50% - 10px);
+        font-size: 0.9em;
+    }
+
+    .filterSection h3 {
+        font-size: 1.4em;
+    }
+
+    .applyButton {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .filterSection .checkboxGroup {
+        gap: 8px;
+    }
+
+    .filterSection .checkboxGroup label {
+        flex: 1 1 100%;
+        font-size: 0.85em;
+    }
+
+    .filterSection h3 {
+        font-size: 1.3em;
+    }
+
+    .applyButton {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}
   

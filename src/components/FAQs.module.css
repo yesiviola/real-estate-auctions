@@ -38,3 +38,32 @@
     line-height: 1.6;
   }
   
+
+  @media (max-width: 768px) {
+    .faqs {
+        padding: 15px; 
+    }
+
+    .faqQuestion {
+        font-size: 18px; 
+    }
+
+    .faqAnswer {
+        font-size: 16px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .faqs {
+        padding: 10px; 
+    }
+
+    .faqQuestion {
+        font-size: 16px; 
+    }
+
+    .faqAnswer {
+        font-size: 14px; 
+    }
+}

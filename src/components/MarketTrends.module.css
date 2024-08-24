@@ -97,3 +97,46 @@
 .resources a:hover {
   color: #b71c1c;
 }
+
+@media (max-width: 768px) {
+  .marketTrends h1 {
+    font-size: 24px;
+  }
+
+  .trendImage, .videoThumbnail {
+    width: 100%;
+    height: auto;
+  }
+
+  .chart {
+    width: 100%;
+  }
+
+  .videoSection {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marketTrends h1 {
+    font-size: 20px;
+  }
+
+  .marketTrends p {
+    font-size: 14px;
+  }
+
+  .trendImage, .videoThumbnail {
+    width: 100%;
+    height: auto;
+  }
+
+  .chart {
+    width: 100%;
+  }
+
+  .playButton img {
+    width: 40px;
+    height: 40px;
+  }
+}
