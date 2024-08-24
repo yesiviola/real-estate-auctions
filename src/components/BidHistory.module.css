@@ -57,4 +57,49 @@
     margin: 10px 0;
     font-size: 16px;
   }
-  
+  @media (max-width: 768px) {
+    .bidHistory {
+        padding: 15px;
+    }
+
+    .bidHistory h2 {
+        font-size: 22px;
+    }
+
+    .table th, .table td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .description h2 {
+        font-size: 18px;
+    }
+
+    .description p, .quickLook p, .housingDetails p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .bidHistory {
+        padding: 10px;
+    }
+
+    .bidHistory h2 {
+        font-size: 20px;
+    }
+
+    .table th, .table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .description h2 {
+        font-size: 16px;
+    }
+
+    .description p, .quickLook p, .housingDetails p {
+        font-size: 12px;
+    }
+}

@@ -1,5 +1,3 @@
-
-
 .carouselContainer {
     margin: 0 auto;
     width: 100%;
@@ -15,3 +13,20 @@
     
   }
   
+
+  @media (max-width: 768px) {
+    .carouselContainer {
+        padding: 0 10px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    .carouselContainer {
+        padding: 0 5px; 
+    }
+
+    .image {
+        border-radius: 0; 
+    }
+}

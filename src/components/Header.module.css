@@ -24,14 +24,8 @@ body {
 
 .nav {
     display: flex;
-    gap: 20px;
-}
-
-
-.nav  {
-gap: 30px;
-    
-    font-size: 22px;
+    gap: 30px;
+    font-size:22px;
 }
 
 .nav a  {
@@ -42,16 +36,78 @@ gap: 30px;
 
 .authButtons {
     display: flex;
-    gap: 15px;
+    gap: 10px;
 }
 
 .loginButton, .registerButton {
     background-color: rgba(98, 207, 226, 0.897);
     border: none;
-    padding: 10px 20px;
+    padding: 10px 15px;
     font-weight: bold;
     cursor:pointer;
     border-radius: 5px;
     
 }
 
+@media (max-width: 768px) {
+    .header {
+        flex-direction:column;
+        align-items:flex-start;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 130px;
+        width: 170px;
+        margin-left: 50vw;
+        margin-bottom: -150px;
+    }
+
+    .nav {
+        flex-direction:column;
+        gap: 5px;
+        margin-top: 10px;
+        margin-right: auto;
+    }
+
+    .nav a {
+        font-size: 18px;
+    }
+
+    .authButtons {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .loginButton, .registerButton {
+        padding: 10px 10px;
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        align-items: center;
+    }
+
+    .logo {
+        height: 100px;
+        width: 130px;
+    }
+
+    .nav {
+        font-size: 16px;
+    }
+
+    .authButtons {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .loginButton, .registerButton {
+        width: 100%;
+    }
+}

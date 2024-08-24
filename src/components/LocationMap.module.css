@@ -100,4 +100,65 @@
   .table td:hover {
     background-color:#d0d0d0;
   }
-  
+  @media (max-width: 768px) {
+    .locationMap {
+        padding: 15px;
+    }
+
+    .locationMap h2 {
+        font-size: 22px;
+    }
+
+    .adFeatures h2, .planningZone h2 {
+        font-size: 22px;
+    }
+
+    .featureSection ul li {
+        flex: 1 1 45%; 
+    }
+
+    .featureSection ul li {
+        font-size: 14px;
+    }
+
+    .table th, .table td {
+        font-size: 14px;
+        padding: 6px;
+    }
+
+    .featureSection h3, .zoneSection h3 {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .locationMap {
+        padding: 10px;
+    }
+
+    .locationMap h2 {
+        font-size: 20px;
+    }
+
+    .adFeatures h2, .planningZone h2 {
+        font-size: 20px;
+    }
+
+    .featureSection ul li {
+        flex: 1 1 100%; 
+    }
+
+    .featureSection ul li {
+        font-size: 12px;
+    }
+
+    .table th, .table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .featureSection h3, .zoneSection h3 {
+        font-size: 16px;
+    }
+}
