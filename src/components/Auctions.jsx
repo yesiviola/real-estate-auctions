@@ -12,7 +12,7 @@ const Auctions = () => {
       location: 'San Francisco, CA',
       price: '$1,200,000',
       status: 'approved',
-      image: '/src/assets/apartment.jpg'
+      image: '/assets/apartment.jpg'
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ const Auctions = () => {
       location: 'Los Angeles, CA',
       price: '$2,50,000',
       status: 'pending',
-      image: '/src/assets/apartment2.jpg'
+      image: '/assets/apartment2.jpg'
     },
     {
       id: 3,
@@ -28,7 +28,7 @@ const Auctions = () => {
       location: 'Miami, FL',
       price: '$5,000,000',
       status: 'approved',
-      image: '/src/assets/casalujo.avif'
+      image: '/assets/casalujo.avif'
     }
   ]);
 
@@ -60,7 +60,7 @@ const Auctions = () => {
       price: '$1,500,000',
       type:'Apartment',
       status: 'approved',
-      image: '/src/assets/apartment.jpg'
+      image: '/assets/apartment.jpg'
     },
     {
       id:2,
@@ -69,7 +69,7 @@ const Auctions = () => {
       price: '$2,500,000',
       type: 'House',
       status:'pending',
-      image: '/src/assets/apartment2.jpg',
+      image: '/assets/apartment2.jpg',
     },
   ]);
 
