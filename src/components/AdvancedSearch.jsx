@@ -119,6 +119,27 @@ const AdvancedSearch = ({ onApplyFilters }) => {
               onChange={(e) => handleCheckboxChange(e, 'externalFeatures')}
             /> Garden
           </label>
+          <label>
+            <input
+              type="checkbox"
+              name="Pool Access"
+              onChange={(e) => handleCheckboxChange(e, 'externalFeatures')}
+            /> Pool Access
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="Ocean View"
+              onChange={(e) => handleCheckboxChange(e, 'externalFeatures')}
+            /> Ocean View
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="City View"
+              onChange={(e) => handleCheckboxChange(e, 'externalFeatures')}
+            /> City View
+          </label>
         </div>
       </div>
 
