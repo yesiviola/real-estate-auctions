@@ -22,6 +22,14 @@ const Auctions = () => {
       status: 'pending',
       image: '/src/assets/apartment2.jpg'
     },
+    {
+      id: 3,
+      title: 'Luxury Villa',
+      location: 'Miami, FL',
+      price: '$5,000,000',
+      status: 'approved',
+      image: '/src/assets/casalujo.avif'
+    }
   ]);
 
 
@@ -157,9 +165,6 @@ const Auctions = () => {
     console.log('Creating listing with details:', listingDetails);
     // Aquí dejo el espacio para  manejar la lógica para enviar los detalles al backend
   };
-
-
-
 
 
   const renderContent = () => {

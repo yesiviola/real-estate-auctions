@@ -7,9 +7,6 @@ const About = ()  => {
     const toggleExpand = () => {
         setExpanded(!expanded);
     };
-
-
-
     return (
         <div className={styles.about}>
             <h1>Who are we?</h1>

@@ -4,10 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import styles from './Carousel.module.css';
 
-
-
-
-
 const Carousel = () => {
     const settings = {
         dots: true,

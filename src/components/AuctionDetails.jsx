@@ -1,9 +1,6 @@
 import {  useNavigate, useParams } from 'react-router-dom';
 import styles from './AuctionDetails.module.css';
 
-
-
-
 const AuctionDetails = () => {
 
     const { id } = useParams();
