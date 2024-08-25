@@ -7,6 +7,7 @@ const AdvancedSearch = ({ onApplyFilters }) => {
     propertyType: '',
     rooms: [],
     floors: [],
+    bathrooms: [],
     externalFeatures: [],
     internalFeatures: [],
     locationFeatures: []
@@ -80,6 +81,34 @@ const AdvancedSearch = ({ onApplyFilters }) => {
             /> 6 Bedrooms
           </label>
         </div>
+      </div>
+
+      <div className={styles.filterSection}>
+        <h3>Number of Bathrooms</h3>
+        <div className={styles.checkboxGroup}>
+          <label>
+            <input
+              type="checkbox"
+              name="2 Bathrooms"
+              onChange={(e) => handleCheckboxChange(e, 'bathrooms')}
+            /> 2 Bathrooms
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="3 Bathrooms"
+              onChange={(e) => handleCheckboxChange(e, 'bathrooms')}
+            /> 3 Bathrooms
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              name="4 Bathrooms"
+              onChange={(e) => handleCheckboxChange(e, 'bathrooms')}
+            /> 4 Bathrooms
+          </label>
+        </div>
+
       </div>
 
       <div className={styles.filterSection}>

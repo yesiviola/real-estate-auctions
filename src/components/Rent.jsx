@@ -59,6 +59,12 @@ const Rent = () => {
       );
     }
 
+    if (filters.bathrooms.length > 0) {
+      filtered = filtered.filter(property => 
+        filters.bathrooms.every(bathroom => property.features.includes(bathroom))
+      )
+    }
+
     if (filters.floors.length > 0) {
       filtered = filtered.filter(property =>
         filters.floors.every(floor => property.features.includes(floor))
