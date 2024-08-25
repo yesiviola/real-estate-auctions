@@ -7,16 +7,16 @@ const Rent = () => {
   const [properties, setProperties] = useState([
     {
       id: 1,
-      image: '/src/assets/apartment.jpg',
+      image: '/assets/apartment.jpg',
       title: 'Luxury Apartment',
       location: 'San Francisco, CA',
       price: '$3,500/month',
       type: 'Apartment',
-      features: ['2 Bedrooms', '2 Bathrooms', 'City View', 'Balcony','2nd Floor']
+      features: ['2 Bedrooms', '2 Bathrooms', 'City View', 'Balcony', '2nd Floor']
     },
     {
       id: 2,
-      image: '/src/assets/apartmento.jpeg',
+      image: '/assets/apartmento.jpeg',
       title: 'Modern Apartment',
       location: 'Los Angeles, CA',
       price: '$4,200/month',
@@ -25,16 +25,16 @@ const Rent = () => {
     },
     {
       id: 3,
-      image: '/src/assets/casalujo.avif',
+      image: '/assets/casalujo.avif',
       title: 'Luxury House',
       location: 'Miami, FL',
       price: '$6,000/month',
       type: 'House',
-      features: ['6 Bedrooms', '3 Bathrooms', 'Ocean View','Garden']
+      features: ['6 Bedrooms', '3 Bathrooms', 'Ocean View', 'Garden']
     },
     {
       id: 4,
-      image: '/src/assets/house.jpg',
+      image: '/assets/house.jpg',
       title: 'Luxury House',
       location: 'San Francisco',
       price: '$3,000/month',
@@ -71,7 +71,6 @@ const Rent = () => {
       );
     }
   
-
     setFilteredProperties(filtered);
   };
 
